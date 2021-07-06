@@ -1,7 +1,7 @@
 import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
+# import pandas as pd
+# import seaborn as sns
+# import matplotlib.pyplot as plt
 
 import streamlit as st
 
@@ -27,7 +27,7 @@ if uploaded_file_buffer is not None:
     print(uploaded_file.mode)
     print(type(uploaded_file_buffer))
     print(type(uploaded_file))
-    cnn_model = load_model('cat_or_dog.h5')
+    cnn_model = load_model('cat_or_dog_v2.h5')
     st.write('This is the uploaded image:')
     st.image(uploaded_file)
     test_image = uploaded_file.resize((64, 64))
